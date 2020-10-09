@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import hacktoberfy
+import fire
 
 if __name__ == '__main__':
-    hacktoberfy.main()
+    fire.Fire(hacktoberfy.Hacktoberfy)
