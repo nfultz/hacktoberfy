@@ -1,0 +1,16 @@
+environment:
+  matrix:
+    # For Python versions available on Appveyor, see
+    # http://www.appveyor.com/docs/installed-software#python
+    - PYTHON: "C:\\Python35-x64"
+    - PYTHON: "C:\\Python36"
+    - PYTHON: "C:\\Python37"
+
+install:
+  - "%PYTHON%\\python.exe -m pip install pipenv"
+  - "%PYTHON%\\python.exe -m pipenv --bare install --dev --skip-lock"
+
+build: off
+
+test_script:
+- "%PYTHON%\\python.exe -m pipenv run python -m pytest"

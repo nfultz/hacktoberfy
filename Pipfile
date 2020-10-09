@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+flit = "*"
+mock = "*"
+pytest = "*"
+pytest-mock = "*"
+pytest-cov = "*"
+pylint = "*"
+pudb = "*"
+tox = "*"
+sphinx = "*"
+setuptools = "*"

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "hacktoberfy"
+author = "Neal Fultz"
+author-email = "nfultz@gmail.com"
+home-page = "https://github.com/nfultz/hacktoberfy"
+description-file = "README.md"
+[tool.flit.scripts]
+hacktoberfy = "hacktoberfy:main"
